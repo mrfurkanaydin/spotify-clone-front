@@ -16,7 +16,7 @@ export default function BoardingLayout() {
       <Stack>
         <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen name="modes" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
+        {/* <Stack.Screen name="+not-found" /> */}
       </Stack>
     </ThemeProvider>
   );

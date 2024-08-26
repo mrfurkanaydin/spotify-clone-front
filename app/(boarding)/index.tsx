@@ -1,10 +1,11 @@
+import Button from '@/components/Button';
 import { ImageBackground, StyleSheet, View, Text, Image } from 'react-native';
 
 
 export default function GetStartedScreen() {
   return (
     <View style={styles.container} >
-      <ImageBackground source={require('../../assets/images/ariana.jpg')} resizeMode="cover" style={styles.image}>
+      <ImageBackground source={require('../../assets/images/boarding/ariana.jpg')} resizeMode="cover" style={styles.image}>
         <View style={styles.overlay} />
         <View style={styles.logoContainer}>
           <Image style={styles.logo} source={require('../../assets/images/spotify_logo_green.webp')} />
@@ -12,6 +13,7 @@ export default function GetStartedScreen() {
         <View style={styles.footerContainer}>
           <Text style={styles.text}>Enjoy Listening To Music</Text>
           <Text style={styles.description}>Discover, Listen, Enjoy! Stream millions of songs, albums, and playlists anytime, anywhere. Start your music journey now!</Text>
+          <Button text={"GET STARTED"} action={"/modes"} />
         </View>
       </ImageBackground>
     </View >
